@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluir jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* Estilos para hacer el formulario responsive */
+        /* Puedes personalizar estos estilos según tus preferencias */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para los campos del formulario */
+        form input[type="text"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para el botón de enviar */
+        form input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Estilos para las etiquetas */
+        form label {
+            font-weight: bold;
+        }
+
+        /* Estilos para las filas del formulario */
+        form .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Media query para dispositivos móviles */
+        @media screen and (max-width: 600px) {
+            form {
+                width: 90%;
+            }
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="int"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+
+
+    </style>
+</head>
+            <h2 class="text-center">Ecuacion Segundo grado</h2>
+<body>
+        <h2 class="text-center"> Ingrese Valores </h2>
+        <form action="HelloServlet" method="post">
+            <label for="a">Coeficiente a:</label>
+            <input type="number" id="a" name="a" required/><br/>
+            <label for="b">Coeficiente b:</label>
+            <input type="number" id="b" name="b" required/><br/>
+            <label for="c">Coeficiente c:</label>
+            <input type="number" id="c" name="c" required/><br/>
+            <input type="submit" value="Resolver"/>
+        </form>
+</body>
+</html>
